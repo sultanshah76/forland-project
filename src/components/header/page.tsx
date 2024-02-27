@@ -1,4 +1,4 @@
-import Mark from "/web development/2.o/forland-inds-sports/public/images/fis footer logo.svg";
+import Mark from "/public/images/fis footer logo.svg";
 import Image from "next/image";
 import { APP_LINKS } from "@/utils/constant";
 import Link from "next/link";
