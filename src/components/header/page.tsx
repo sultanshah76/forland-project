@@ -21,9 +21,12 @@ export default function Header() {
   <div className=" absolute top-0 right-0 h-full flex items-center pr-2"><Search /></div>
   <Input placeholder="Search products" className=" h-8 border-black w-80 from-neutral-700 font-bold"/>
   </div>
+  <Link href={"/cart"}>
 <div className="rounded-full w-12 h-12 bg-primary flex justify-center items-center relative">
   <div className=" absolute  top-1 right-2 rounded-full w-3 h-3 bg-red-500 flex justify-center items-center text-xs">0</div>
-  <ShoppingCart color="white" /></div>
+  <ShoppingCart color="white" /> 
+  </div>
+  </Link>
 </main>
   )
   };

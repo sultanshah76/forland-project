@@ -5,7 +5,7 @@ import { Button } from '../../ui/button';
 
 function Newsletter() {
   return (
-    <main className='hidden lg:block px-2 transition duration-300 ease-in-out transform hover:scale-105'>
+    <main className='hidden lg:block px-2 transition duration-1000 ease-in-out transform hover:scale-90'>
           <div className=' flex justify-center items-center text-4xl font-extrabold  tracking-wide py-14'>SPORTS WEAR DESIGN FOR EXCELLENCE
             
           </div>
@@ -42,8 +42,8 @@ These discounts can help businesses increase sales volume while providing custom
             </p>
           </div>
         </div>
-              <Link href='/products'>
-                <Button className='font-bold h-16 w-52 flex items-center justify-center rounded-2xl text-white bg-primary mt-2'>
+              <Link href='/allproducts'>
+                <Button className='transition duration-300 ease-in-out transform hover:scale-110 font-bold h-16 w-52 flex items-center justify-center rounded-2xl text-white bg-primary mt-2'>
                   ORDER NOW
                 </Button>
               </Link>

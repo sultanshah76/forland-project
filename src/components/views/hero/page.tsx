@@ -17,7 +17,7 @@ const Hero = () => {
       <section className="flex mt-10 mb-20 flex-col lg:flex-row ">
         <div className="flex-1">
             <button className="pt-16 pb-14">
-              <Link href="/" className=" bg-blue-200 h-10 w-28 font-semibold  text-blue-700  rounded-lg flex items-center justify-center ">Sale 80%</Link>
+              <Link href="#" className=" bg-blue-200 h-10 w-28 font-semibold  text-blue-700  rounded-lg flex items-center justify-center ">Sale 80%</Link>
             </button>
             <h1 className="mb-5 text-4xl font-extrabold leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
               Custom Sportswear Manufacturer From Sialkot Pakistan
@@ -27,7 +27,7 @@ const Hero = () => {
               delivers innovative and stylish sportswear designed to elevate
               performance and inspire greatness.
             </p>
-            <Link href="/" >
+            <Link href="/allproducts" >
               <Button  className=" text-lg bg-primary h-16 w-52 font-bold text-white flex items-center justify-center">
                 <ShoppingCart color="white" /> Start Shopping
               </Button>
