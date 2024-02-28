@@ -4,12 +4,14 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Quantity from '@/components/Quantity/page';
+import Addcart from '@/components/addcart/page';
 
 const prdctsdetail = (id: string) => {
   return products.filter((product) => (product.id === id));
 };
 export default function Page({ params }: { params: { slug: string } }) {
   const result = prdctsdetail(params.slug);
+
   return (
     <div className='lg:flex flex-wrap mt-16 mb-32'>
       {
@@ -33,12 +35,19 @@ export default function Page({ params }: { params: { slug: string } }) {
               </div>
              <Quantity/>
               <div className='flex  mt-7 gap-x-5 items-baseline justify-center  text-xl font-bold'>
-              <Link href='/cart'>
-                <Button className='font-bold h-10 w-32 flex items-center justify-center  text-white bg-primary mt-2'>
-                  Add to Cart
-                </Button>
-              </Link>
+                <Addcart/>
               <div>
+              {/* "use client";
+export default function OnclickBUTTON() {
+    
+    return (<div> <button className="bg-yellow-500" >ONCLICK</button>
+        
+    {`on click web event react hooks button
+    to make it client component always "use client" on the top of the file.`}
+    </div>
+    );
+  } */}
+  
               ${product.price}.00
               </div>
               </div>
